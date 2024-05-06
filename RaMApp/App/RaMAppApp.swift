@@ -11,7 +11,7 @@ import SwiftUI
 struct RaMAppApp: App {
     var body: some Scene {
         WindowGroup {
-
+            CharactersListView()
         }
     }
 }

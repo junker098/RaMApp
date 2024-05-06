@@ -10,6 +10,8 @@
 		DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */; };
 		DE2677E72BE92F6F00A438E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2677E62BE92F6F00A438E2 /* Assets.xcassets */; };
 		DE2677EA2BE92F6F00A438E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */; };
+		DE2677F72BE9315900A438E2 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677F62BE9315900A438E2 /* CharactersListView.swift */; };
+		DE2677FC2BE931AD00A438E2 /* CharactersListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +19,8 @@
 		DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaMAppApp.swift; sourceTree = "<group>"; };
 		DE2677E62BE92F6F00A438E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE2677F62BE9315900A438E2 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
+		DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		DE2677F42BE9308A00A438E2 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				DE2677F82BE9316100A438E2 /* View */,
+				DE2677F92BE9316700A438E2 /* Reducer */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -110,6 +116,22 @@
 			children = (
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		DE2677F82BE9316100A438E2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE2677F62BE9315900A438E2 /* CharactersListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE2677F92BE9316700A438E2 /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */,
+			);
+			path = Reducer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2677F72BE9315900A438E2 /* CharactersListView.swift in Sources */,
+				DE2677FC2BE931AD00A438E2 /* CharactersListReducer.swift in Sources */,
 				DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
