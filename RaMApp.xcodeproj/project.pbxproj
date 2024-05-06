@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */; };
-		DE2677E52BE92F6D00A438E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677E42BE92F6D00A438E2 /* ContentView.swift */; };
 		DE2677E72BE92F6F00A438E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2677E62BE92F6F00A438E2 /* Assets.xcassets */; };
 		DE2677EA2BE92F6F00A438E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +15,6 @@
 /* Begin PBXFileReference section */
 		DE2677DF2BE92F6D00A438E2 /* RaMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaMAppApp.swift; sourceTree = "<group>"; };
-		DE2677E42BE92F6D00A438E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE2677E62BE92F6F00A438E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +49,10 @@
 		DE2677E12BE92F6D00A438E2 /* RaMApp */ = {
 			isa = PBXGroup;
 			children = (
-				DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */,
-				DE2677E42BE92F6D00A438E2 /* ContentView.swift */,
+				DE2677F02BE9304700A438E2 /* App */,
+				DE2677F12BE9304D00A438E2 /* Core */,
+				DE2677F22BE9305200A438E2 /* Model */,
+				DE2677F32BE9305600A438E2 /* Service */,
 				DE2677E62BE92F6F00A438E2 /* Assets.xcassets */,
 				DE2677E82BE92F6F00A438E2 /* Preview Content */,
 			);
@@ -65,6 +65,51 @@
 				DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DE2677F02BE9304700A438E2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DE2677E22BE92F6D00A438E2 /* RaMAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DE2677F12BE9304D00A438E2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DE2677F42BE9308A00A438E2 /* Root */,
+				DE2677F52BE9309000A438E2 /* DetailView */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DE2677F22BE9305200A438E2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE2677F32BE9305600A438E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DE2677F42BE9308A00A438E2 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		DE2677F52BE9309000A438E2 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2677E52BE92F6D00A438E2 /* ContentView.swift in Sources */,
 				DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
