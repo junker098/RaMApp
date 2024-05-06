@@ -12,6 +12,12 @@
 		DE2677EA2BE92F6F00A438E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */; };
 		DE2677F72BE9315900A438E2 /* CharactersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677F62BE9315900A438E2 /* CharactersListView.swift */; };
 		DE2677FC2BE931AD00A438E2 /* CharactersListReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */; };
+		DE2677FF2BE931FB00A438E2 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = DE2677FE2BE931FB00A438E2 /* ComposableArchitecture */; };
+		DE2678022BE9322F00A438E2 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678012BE9322F00A438E2 /* Nuke */; };
+		DE2678042BE9322F00A438E2 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678032BE9322F00A438E2 /* NukeExtensions */; };
+		DE2678062BE9322F00A438E2 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678052BE9322F00A438E2 /* NukeUI */; };
+		DE2678092BE9340200A438E2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678082BE9340200A438E2 /* Realm */; };
+		DE26780B2BE9340200A438E2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE26780A2BE9340200A438E2 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE26780B2BE9340200A438E2 /* RealmSwift in Frameworks */,
+				DE2677FF2BE931FB00A438E2 /* ComposableArchitecture in Frameworks */,
+				DE2678022BE9322F00A438E2 /* Nuke in Frameworks */,
+				DE2678042BE9322F00A438E2 /* NukeExtensions in Frameworks */,
+				DE2678062BE9322F00A438E2 /* NukeUI in Frameworks */,
+				DE2678092BE9340200A438E2 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +162,14 @@
 			dependencies = (
 			);
 			name = RaMApp;
+			packageProductDependencies = (
+				DE2677FE2BE931FB00A438E2 /* ComposableArchitecture */,
+				DE2678012BE9322F00A438E2 /* Nuke */,
+				DE2678032BE9322F00A438E2 /* NukeExtensions */,
+				DE2678052BE9322F00A438E2 /* NukeUI */,
+				DE2678082BE9340200A438E2 /* Realm */,
+				DE26780A2BE9340200A438E2 /* RealmSwift */,
+			);
 			productName = RaMApp;
 			productReference = DE2677DF2BE92F6D00A438E2 /* RaMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -178,6 +198,11 @@
 				Base,
 			);
 			mainGroup = DE2677D62BE92F6D00A438E2;
+			packageReferences = (
+				DE2677FD2BE931FB00A438E2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */,
+				DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = DE2677E02BE92F6D00A438E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -414,6 +439,66 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE2677FD2BE931FB00A438E2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.2;
+			};
+		};
+		DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+		DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.50.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE2677FE2BE931FB00A438E2 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2677FD2BE931FB00A438E2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		DE2678012BE9322F00A438E2 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		DE2678032BE9322F00A438E2 /* NukeExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeExtensions;
+		};
+		DE2678052BE9322F00A438E2 /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		DE2678082BE9340200A438E2 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		DE26780A2BE9340200A438E2 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE2677D72BE92F6D00A438E2 /* Project object */;
 }
