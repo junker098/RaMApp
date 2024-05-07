@@ -6,13 +6,35 @@
 //
 
 import SwiftUI
+import NukeUI
 
 struct CharacterRowView: View {
+    
+    var character: Character
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    
+        HStack(content: {
+            LazyImage(url: character.image) { state in
+                if let image = state.image {
+                    image.resizable()
+                } else {
+                    ProgressView()
+                }
+            }
+            .frame(width: 50, height: 50)
+            .clipShape(Circle())
+            
+            VStack(alignment: .leading) {
+                Text("Name: \(character.name)")
+                Text("Status: \(character.status)")
+            }
+            
+            Spacer()
+        })
     }
 }
 
 #Preview {
-    CharacterRowView()
+    CharacterRowView(character: Character.testCharacter)
 }
