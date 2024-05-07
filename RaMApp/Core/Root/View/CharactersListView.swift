@@ -6,13 +6,49 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 struct CharactersListView: View {
+    
+    let store: StoreOf<CharactersListReducer>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        WithViewStore(self.store, observe: { $0 }) { viewStore in
+            WithPerceptionTracking {
+                NavigationView {
+                    List {
+                        ForEach(store.characters, id: \.id) { character in
+                            NavigationLink(destination: CharacterDetailView(character: character)) {
+                                CharacterRowView(character: character)
+                                    .onAppear {
+                                        //pagination
+                                        if character == viewStore.characters.last  {
+                                            viewStore.send(.loadCharacters)
+                                        }
+                                    }
+                            }
+                        }
+                        if viewStore.loadingStatus == .loading || viewStore.loadingStatus == .start  {
+                            ProgressView()
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .center)
+                        }
+                    }
+                    .navigationTitle("Rick and Morty")
+                }
+                .tint(.black)
+                .alert(isPresented: .constant(viewStore.loadingStatus == .error)) {
+                    Alert(title: Text("Error"), message: Text(viewStore.errorMessage), dismissButton: .default(Text("Close")))
+                }
+            }
+            .onAppear {
+                viewStore.send(.loadCharacters)
+            }
+        }
     }
 }
 
 #Preview {
-    CharactersListView()
+    CharactersListView(store: Store(initialState: CharactersListReducer.State(), reducer: {
+        CharactersListReducer()
+    }))
 }
