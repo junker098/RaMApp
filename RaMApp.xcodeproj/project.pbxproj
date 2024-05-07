@@ -16,8 +16,12 @@
 		DE2678022BE9322F00A438E2 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678012BE9322F00A438E2 /* Nuke */; };
 		DE2678042BE9322F00A438E2 /* NukeExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678032BE9322F00A438E2 /* NukeExtensions */; };
 		DE2678062BE9322F00A438E2 /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678052BE9322F00A438E2 /* NukeUI */; };
-		DE2678092BE9340200A438E2 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678082BE9340200A438E2 /* Realm */; };
 		DE26780B2BE9340200A438E2 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE26780A2BE9340200A438E2 /* RealmSwift */; };
+		DE2678112BEAAAB800A438E2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678102BEAAAB800A438E2 /* NetworkService.swift */; };
+		DE2678132BEAAAFD00A438E2 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678122BEAAAFD00A438E2 /* CharacterModel.swift */; };
+		DE2678152BEAAB3500A438E2 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678142BEAAB3500A438E2 /* CharacterDetailView.swift */; };
+		DE2678182BEAABC400A438E2 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678172BEAABC400A438E2 /* CharacterRowView.swift */; };
+		DE26781A2BEAABF300A438E2 /* ProfileImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,11 @@
 		DE2677E92BE92F6F00A438E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE2677F62BE9315900A438E2 /* CharactersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListView.swift; sourceTree = "<group>"; };
 		DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListReducer.swift; sourceTree = "<group>"; };
+		DE2678102BEAAAB800A438E2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DE2678122BEAAAFD00A438E2 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		DE2678142BEAAB3500A438E2 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		DE2678172BEAABC400A438E2 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
+		DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +48,6 @@
 				DE2678022BE9322F00A438E2 /* Nuke in Frameworks */,
 				DE2678042BE9322F00A438E2 /* NukeExtensions in Frameworks */,
 				DE2678062BE9322F00A438E2 /* NukeUI in Frameworks */,
-				DE2678092BE9340200A438E2 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +104,7 @@
 			children = (
 				DE2677F42BE9308A00A438E2 /* Root */,
 				DE2677F52BE9309000A438E2 /* DetailView */,
+				DE2678162BEAAB7700A438E2 /* Modifiers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 		DE2677F22BE9305200A438E2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DE2678122BEAAAFD00A438E2 /* CharacterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +120,7 @@
 		DE2677F32BE9305600A438E2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DE2678102BEAAAB800A438E2 /* NetworkService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 		DE2677F52BE9309000A438E2 /* DetailView */ = {
 			isa = PBXGroup;
 			children = (
+				DE2678142BEAAB3500A438E2 /* CharacterDetailView.swift */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -134,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2677F62BE9315900A438E2 /* CharactersListView.swift */,
+				DE2678172BEAABC400A438E2 /* CharacterRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +157,14 @@
 				DE2677FB2BE931AD00A438E2 /* CharactersListReducer.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		DE2678162BEAAB7700A438E2 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,7 +188,6 @@
 				DE2678012BE9322F00A438E2 /* Nuke */,
 				DE2678032BE9322F00A438E2 /* NukeExtensions */,
 				DE2678052BE9322F00A438E2 /* NukeUI */,
-				DE2678082BE9340200A438E2 /* Realm */,
 				DE26780A2BE9340200A438E2 /* RealmSwift */,
 			);
 			productName = RaMApp;
@@ -229,8 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE26781A2BEAABF300A438E2 /* ProfileImageModifier.swift in Sources */,
+				DE2678182BEAABC400A438E2 /* CharacterRowView.swift in Sources */,
 				DE2677F72BE9315900A438E2 /* CharactersListView.swift in Sources */,
+				DE2678132BEAAAFD00A438E2 /* CharacterModel.swift in Sources */,
 				DE2677FC2BE931AD00A438E2 /* CharactersListReducer.swift in Sources */,
+				DE2678152BEAAB3500A438E2 /* CharacterDetailView.swift in Sources */,
+				DE2678112BEAAAB800A438E2 /* NetworkService.swift in Sources */,
 				DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,11 +512,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */;
 			productName = NukeUI;
-		};
-		DE2678082BE9340200A438E2 /* Realm */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
-			productName = Realm;
 		};
 		DE26780A2BE9340200A438E2 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
