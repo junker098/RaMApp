@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct RaMAppApp: App {
+    static let charactersStore = Store(initialState: CharactersListReducer.State()) {
+        CharactersListReducer()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            CharactersListView()
+            CharactersListView(store: RaMAppApp.charactersStore)
         }
     }
 }
