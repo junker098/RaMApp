@@ -22,6 +22,7 @@
 		DE2678152BEAAB3500A438E2 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678142BEAAB3500A438E2 /* CharacterDetailView.swift */; };
 		DE2678182BEAABC400A438E2 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678172BEAABC400A438E2 /* CharacterRowView.swift */; };
 		DE26781A2BEAABF300A438E2 /* ProfileImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */; };
+		DE2678242BEAC13900A438E2 /* DebugLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678232BEAC13800A438E2 /* DebugLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DE2678142BEAAB3500A438E2 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		DE2678172BEAABC400A438E2 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 		DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModifier.swift; sourceTree = "<group>"; };
+		DE2678232BEAC13800A438E2 /* DebugLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2678102BEAAAB800A438E2 /* NetworkService.swift */,
+				DE2678232BEAC13800A438E2 /* DebugLogger.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE26781A2BEAABF300A438E2 /* ProfileImageModifier.swift in Sources */,
+				DE2678242BEAC13900A438E2 /* DebugLogger.swift in Sources */,
 				DE2678182BEAABC400A438E2 /* CharacterRowView.swift in Sources */,
 				DE2677F72BE9315900A438E2 /* CharactersListView.swift in Sources */,
 				DE2678132BEAAAFD00A438E2 /* CharacterModel.swift in Sources */,
