@@ -23,6 +23,8 @@
 		DE2678182BEAABC400A438E2 /* CharacterRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678172BEAABC400A438E2 /* CharacterRowView.swift */; };
 		DE26781A2BEAABF300A438E2 /* ProfileImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */; };
 		DE2678242BEAC13900A438E2 /* DebugLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678232BEAC13800A438E2 /* DebugLogger.swift */; };
+		DE2678262BEAD1F700A438E2 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2678252BEAD1F700A438E2 /* RealmService.swift */; };
+		DE2678292BEB6E5100A438E2 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = DE2678282BEB6E5100A438E2 /* Reachability */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,7 @@
 		DE2678172BEAABC400A438E2 /* CharacterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRowView.swift; sourceTree = "<group>"; };
 		DE2678192BEAABF300A438E2 /* ProfileImageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageModifier.swift; sourceTree = "<group>"; };
 		DE2678232BEAC13800A438E2 /* DebugLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLogger.swift; sourceTree = "<group>"; };
+		DE2678252BEAD1F700A438E2 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE26780B2BE9340200A438E2 /* RealmSwift in Frameworks */,
+				DE2678292BEB6E5100A438E2 /* Reachability in Frameworks */,
 				DE2677FF2BE931FB00A438E2 /* ComposableArchitecture in Frameworks */,
 				DE2678022BE9322F00A438E2 /* Nuke in Frameworks */,
 				DE2678042BE9322F00A438E2 /* NukeExtensions in Frameworks */,
@@ -124,6 +128,7 @@
 			children = (
 				DE2678102BEAAAB800A438E2 /* NetworkService.swift */,
 				DE2678232BEAC13800A438E2 /* DebugLogger.swift */,
+				DE2678252BEAD1F700A438E2 /* RealmService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 				DE2678032BE9322F00A438E2 /* NukeExtensions */,
 				DE2678052BE9322F00A438E2 /* NukeUI */,
 				DE26780A2BE9340200A438E2 /* RealmSwift */,
+				DE2678282BEB6E5100A438E2 /* Reachability */,
 			);
 			productName = RaMApp;
 			productReference = DE2677DF2BE92F6D00A438E2 /* RaMApp.app */;
@@ -225,6 +231,7 @@
 				DE2677FD2BE931FB00A438E2 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 				DE2678002BE9322F00A438E2 /* XCRemoteSwiftPackageReference "Nuke" */,
 				DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DE2678272BEB6E5100A438E2 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = DE2677E02BE92F6D00A438E2 /* Products */;
 			projectDirPath = "";
@@ -261,6 +268,7 @@
 				DE2678152BEAAB3500A438E2 /* CharacterDetailView.swift in Sources */,
 				DE2678112BEAAAB800A438E2 /* NetworkService.swift in Sources */,
 				DE2677E32BE92F6D00A438E2 /* RaMAppApp.swift in Sources */,
+				DE2678262BEAD1F700A438E2 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +502,14 @@
 				minimumVersion = 10.50.0;
 			};
 		};
+		DE2678272BEB6E5100A438E2 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -521,6 +537,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE2678072BE9340200A438E2 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		DE2678282BEB6E5100A438E2 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE2678272BEB6E5100A438E2 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

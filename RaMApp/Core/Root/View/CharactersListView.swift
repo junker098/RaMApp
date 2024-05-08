@@ -34,6 +34,17 @@ struct CharactersListView: View {
                         }
                     }
                     .navigationTitle("Rick and Morty")
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                viewStore.send(.saveCharacters)
+                            } label: {
+                                Image(systemName: "square.and.arrow.down")
+                                    .foregroundColor(.black)
+                            }
+                            .disabled(viewStore.loadingStatus == .offline)
+                        }
+                    }
                 }
                 .tint(.black)
                 .alert(isPresented: .constant(viewStore.loadingStatus == .error)) {

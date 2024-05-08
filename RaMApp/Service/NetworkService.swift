@@ -17,6 +17,7 @@ enum LoadingStatus {
     case loading
     case success
     case error
+    case offline
 }
 
 enum ApiError: Error {
